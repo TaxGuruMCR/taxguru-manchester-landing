@@ -1,9 +1,6 @@
-
 import { Phone, Mail, MapPin } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-gray-900 text-white py-12 px-4">
+  return <footer className="bg-gray-900 text-white py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -14,7 +11,7 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>0161 123 4567</span>
+                <span>0161 531 5171</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
@@ -61,8 +58,6 @@ const Footer = () => {
           <p>&copy; 2024 TaxGuru Accountants. All rights reserved. | Registered in England & Wales</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
