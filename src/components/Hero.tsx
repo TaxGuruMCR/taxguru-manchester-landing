@@ -1,14 +1,12 @@
-
 import { Button } from "@/components/ui/button";
 import { Phone, Mail } from "lucide-react";
-
 const Hero = () => {
   const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('contact')?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section aria-labelledby="hero-heading" className="bg-gradient-to-br from-blue-50 to-white py-20 px-4">
+  return <section aria-labelledby="hero-heading" className="bg-gradient-to-br from-blue-50 to-white py-20 px-4">
       <div className="max-w-6xl mx-auto text-center">
         <h1 id="hero-heading" className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
           <span className="text-blue-600">TaxGuru</span> Accountants
@@ -16,14 +14,9 @@ const Hero = () => {
         <p className="text-xl md:text-2xl text-gray-700 mb-4 animate-fade-in">
           Manchester's Trusted Accounting Specialists
         </p>
-        <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto animate-fade-in">
-          Professional accounting services tailored for your business success. From tax planning to financial consulting, we've got you covered.
-        </p>
+        <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto animate-fade-in">Professional accounting services tailored for your business success. From tax planning to financial consulting, we've got you covered.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in">
-          <Button 
-            onClick={scrollToContact}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg transition-all duration-300 hover:scale-105"
-          >
+          <Button onClick={scrollToContact} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg transition-all duration-300 hover:scale-105">
             Get Free Consultation
           </Button>
           <div className="flex items-center gap-6">
@@ -38,18 +31,9 @@ const Hero = () => {
           </div>
         </div>
         <div className="relative">
-          <img 
-            src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
-            alt="Professional accounting workspace with laptop, calculator and financial documents" 
-            className="rounded-lg shadow-2xl mx-auto animate-scale-in"
-            width="2000" 
-            height="1333"
-            loading="eager"
-          />
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Professional accounting workspace with laptop, calculator and financial documents" className="rounded-lg shadow-2xl mx-auto animate-scale-in" width="2000" height="1333" loading="eager" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

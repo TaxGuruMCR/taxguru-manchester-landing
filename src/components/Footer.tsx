@@ -19,7 +19,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span className="text-left mx-0 my-0 px-0 text-sm">Office 43, Adamson Tower, Manchester M20 2YY</span>
+                <span>123 King Street, Manchester, M2 6AZ</span>
               </div>
             </div>
           </div>
@@ -44,18 +44,18 @@ const Footer = () => {
               <p>Sunday: Closed</p>
             </div>
             <div className="mt-6">
-              <h5 className="font-semibold mb-2">Professional Memberships</h5>
+              
               <ul className="text-gray-300 text-sm space-y-1">
-                <li>• ACCA Certified</li>
-                <li>• ICAEW Member</li>
                 
+                
+                <li>• AAT Licensed</li>
               </ul>
             </div>
           </div>
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 TaxGuru Accountants. All rights reserved. | Registered in England & Wales</p>
+          <p>© 2025 TaxGuru Accountants Limited. All rights reserved. | Registered in England &amp; Wales</p>
         </div>
       </div>
     </footer>;
