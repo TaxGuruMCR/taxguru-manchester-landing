@@ -1,16 +1,12 @@
-
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Calculator } from "lucide-react";
-
 const Hero = () => {
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({
       behavior: 'smooth'
     });
   };
-
-  return (
-    <section aria-labelledby="hero-heading" className="bg-gradient-to-br from-blue-50 to-white py-20 px-4">
+  return <section aria-labelledby="hero-heading" className="bg-gradient-to-br from-blue-50 to-white py-20 px-4">
       <div className="max-w-6xl mx-auto text-center">
         {/* Logo */}
         <div className="flex items-center justify-center mb-8 animate-fade-in">
@@ -18,19 +14,20 @@ const Hero = () => {
             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
               <Calculator className="w-7 h-7 text-white" />
             </div>
-            <span className="text-3xl font-bold text-blue-600">TaxGuru</span>
+            <span className="font-bold text-blue-600 text-6xl">TaxGuru Accountants</span>
           </div>
         </div>
 
-        <h1 id="hero-heading" className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
-          <span className="text-blue-600">TaxGuru</span> Accountants
-        </h1>
+        
         <p className="text-xl md:text-2xl text-gray-700 mb-4 animate-fade-in">
           Manchester's Trusted Accounting Specialists
         </p>
-        <p className="text-lg text-gray-600 mb-4 max-w-3xl mx-auto animate-fade-in">
-          Professional accounting services tailored for your business success. From tax planning to financial consulting, we've got you covered.
-        </p>
+        <p className="text-lg text-gray-600 mb-4 max-w-3xl mx-auto animate-fade-in">From day one, our conversations will be thoughtful, consultative, and straightforward.
+
+That’s because you deserve honest insights to help you make the best financial decisions possible to grow your business year in and year out.
+
+
+      </p>
         
         {/* MTD Ready Badge */}
         <div className="mb-6 animate-fade-in">
@@ -63,8 +60,6 @@ const Hero = () => {
           <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Professional accounting workspace with laptop, calculator and financial documents" className="rounded-lg shadow-2xl mx-auto animate-scale-in" width="2000" height="1333" loading="eager" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
