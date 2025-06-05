@@ -1,10 +1,18 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Calculator } from "lucide-react";
 const Footer = () => {
-  return <footer className="bg-gray-900 text-white py-12 px-4">
+  return (
+    <footer className="bg-gray-900 text-white py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-blue-400 mb-4">TaxGuru Accountants</h3>
+            {/* Logo in Footer */}
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                <Calculator className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-blue-400">TaxGuru Accountants</h3>
+            </div>
+            
             <p className="text-gray-300 mb-4">
               Manchester's trusted accounting specialists, providing comprehensive financial services to help your business thrive.
             </p>
@@ -58,6 +66,8 @@ const Footer = () => {
           <p>© 2025 TaxGuru Accountants Limited. All rights reserved. | Registered in England &amp; Wales</p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
