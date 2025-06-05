@@ -11,17 +11,17 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "AccountingService",
     "name": "TaxGuru Accountants",
-    "description": "Manchester's trusted accounting specialists providing tax planning, bookkeeping, business advisory services and more.",
+    "description": "Manchester's trusted accounting specialists providing tax planning, bookkeeping, business advisory services and more. MTD ready and compliant.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "123 King Street",
+      "streetAddress": "Office 43, Adamson Towers",
       "addressLocality": "Manchester",
-      "postalCode": "M2 6AZ",
+      "postalCode": "M20 2YY",
       "addressCountry": "GB"
     },
-    "telephone": "+441611234567",
-    "email": "info@taxguruaccountants.co.uk",
-    "url": "https://taxguruaccountants.co.uk",
+    "telephone": "+441615315171",
+    "email": "info@taxguruaccountants.com",
+    "url": "https://taxguruaccountants.com",
     "openingHours": [
       "Mo-Fr 09:00-18:00",
       "Sa 10:00-14:00"
@@ -35,8 +35,9 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       <Helmet>
-        <title>TaxGuru Accountants | Professional Accounting Services in Manchester</title>
-        <meta name="description" content="TaxGuru Accountants - Manchester's trusted accounting specialists providing tax planning, bookkeeping, business advisory services and more." />
+        <title>TaxGuru Accountants | Professional Accounting Services in Manchester | MTD Ready</title>
+        <meta name="description" content="TaxGuru Accountants - Manchester's trusted accounting specialists providing tax planning, bookkeeping, business advisory services and more. MTD ready and compliant with a friendly touch." />
+        <meta name="keywords" content="accountants manchester, tax services manchester, accounting firm, tax planning, bookkeeping, payroll, business advisory, vat returns, self assessment, MTD ready, MTD compliant" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

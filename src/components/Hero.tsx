@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Calculator } from "lucide-react";
 
@@ -27,17 +28,32 @@ const Hero = () => {
         <p className="text-xl md:text-2xl text-gray-700 mb-4 animate-fade-in">
           Manchester's Trusted Accounting Specialists
         </p>
-        <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto animate-fade-in">Professional accounting services tailored for your business success. From tax planning to financial consulting, we've got you covered.</p>
+        <p className="text-lg text-gray-600 mb-4 max-w-3xl mx-auto animate-fade-in">
+          Professional accounting services tailored for your business success. From tax planning to financial consulting, we've got you covered.
+        </p>
+        
+        {/* MTD Ready Badge */}
+        <div className="mb-6 animate-fade-in">
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">
+            <span className="w-2 h-2 bg-green-600 rounded-full"></span>
+            MTD Ready & Compliant
+          </div>
+        </div>
+        
+        <p className="text-md text-gray-600 mb-8 max-w-2xl mx-auto animate-fade-in italic">
+          "Pop round for a chat and we'll get the kettle on! ☕ Your numbers are safe with us."
+        </p>
+        
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in">
           <Button onClick={scrollToContact} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg transition-all duration-300 hover:scale-105">
             Get Free Consultation
           </Button>
           <div className="flex items-center gap-6">
-            <a href="tel:+441234567890" aria-label="Call us" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
+            <a href="tel:01615315171" aria-label="Call us" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
               <Phone className="w-5 h-5" />
-              <span className="font-medium">0161 123 4567</span>
+              <span className="font-medium">0161 531 5171</span>
             </a>
-            <a href="mailto:info@taxguruaccountants.co.uk" aria-label="Email us" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
+            <a href="mailto:info@taxguruaccountants.com" aria-label="Email us" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
               <Mail className="w-5 h-5" />
               <span className="font-medium">Email Us</span>
             </a>

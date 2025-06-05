@@ -9,7 +9,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // In a real application, you would handle form submission here
-    alert("Thank you for your message! We'll get back to you within 24 hours.");
+    alert("Thank you for your message! We'll get back to you within 24 hours (and put the kettle on whilst we craft your reply!).");
   };
 
   return (
@@ -19,6 +19,9 @@ const Contact = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
           <p className="text-xl text-gray-600">
             Ready to take control of your finances? Contact us today for a free consultation
+          </p>
+          <p className="text-md text-gray-500 mt-2 italic">
+            We promise to have the kettle on and biscuits ready! ☕🍪
           </p>
         </div>
         
@@ -34,7 +37,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">Phone</p>
-                    <p className="text-gray-600">0161 123 4567</p>
+                    <p className="text-gray-600">0161 531 5171</p>
                   </div>
                 </div>
                 
@@ -44,7 +47,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">Email</p>
-                    <p className="text-gray-600">info@taxguruaccountants.co.uk</p>
+                    <p className="text-gray-600">info@taxguruaccountants.com</p>
                   </div>
                 </div>
                 
@@ -55,8 +58,8 @@ const Contact = () => {
                   <div>
                     <p className="font-medium text-gray-900">Address</p>
                     <p className="text-gray-600">
-                      123 King Street<br />
-                      Manchester, M2 6AZ<br />
+                      Office 43, Adamson Towers<br />
+                      Manchester M20 2YY<br />
                       United Kingdom
                     </p>
                   </div>
@@ -83,6 +86,7 @@ const Contact = () => {
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl">Send Us a Message</CardTitle>
+              <p className="text-sm text-gray-600">Don't worry, we'll have a brew ready when we read it!</p>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -127,6 +131,7 @@ const Contact = () => {
                     <option value="vat-returns">VAT Returns</option>
                     <option value="company-formation">Company Formation</option>
                     <option value="self-assessment">Self Assessment</option>
+                    <option value="mtd-compliance">MTD Compliance</option>
                   </select>
                 </div>
                 
@@ -137,7 +142,7 @@ const Contact = () => {
                   <Textarea 
                     rows={4} 
                     className="w-full" 
-                    placeholder="Tell us about your accounting needs..."
+                    placeholder="Tell us about your accounting needs... (and whether you prefer tea or coffee!)"
                   />
                 </div>
                 
