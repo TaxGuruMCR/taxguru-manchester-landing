@@ -48,7 +48,7 @@ const Footer = () => {
               <ul className="text-gray-300 text-sm space-y-1">
                 <li>• ACCA Certified</li>
                 <li>• ICAEW Member</li>
-                <li>• AAT Licensed</li>
+                
               </ul>
             </div>
           </div>
