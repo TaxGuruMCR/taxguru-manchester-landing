@@ -8,9 +8,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-white py-20 px-4">
+    <section aria-labelledby="hero-heading" className="bg-gradient-to-br from-blue-50 to-white py-20 px-4">
       <div className="max-w-6xl mx-auto text-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
+        <h1 id="hero-heading" className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
           <span className="text-blue-600">TaxGuru</span> Accountants
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 mb-4 animate-fade-in">
@@ -27,11 +27,11 @@ const Hero = () => {
             Get Free Consultation
           </Button>
           <div className="flex items-center gap-6">
-            <a href="tel:+441234567890" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
+            <a href="tel:+441234567890" aria-label="Call us" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
               <Phone className="w-5 h-5" />
               <span className="font-medium">0161 123 4567</span>
             </a>
-            <a href="mailto:info@taxguruaccountants.co.uk" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
+            <a href="mailto:info@taxguruaccountants.co.uk" aria-label="Email us" className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
               <Mail className="w-5 h-5" />
               <span className="font-medium">Email Us</span>
             </a>
@@ -40,8 +40,11 @@ const Hero = () => {
         <div className="relative">
           <img 
             src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
-            alt="Professional accounting workspace" 
+            alt="Professional accounting workspace with laptop, calculator and financial documents" 
             className="rounded-lg shadow-2xl mx-auto animate-scale-in"
+            width="2000" 
+            height="1333"
+            loading="eager"
           />
         </div>
       </div>
